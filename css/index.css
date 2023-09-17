@@ -81,32 +81,32 @@
 }
 
 #featuredAnime {
-    position: relative; /* Set the container to a relative position */
-    width: 50%; /* Adjust the width as needed */
+    position: relative;
+    width: 50%;
   }  
 
 #section1Image {
-    position: absolute; /* Set the image to an absolute position within the container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the image properly */
-    z-index: 1; /* Place the image on top of the background */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
     height: auto;
     width: auto;
   }
   
 
 #featuredAnime {
-    position: relative; /* Set the container to a relative position */
-    width: 50%; /* Adjust the width as needed */
+    position: relative;
+    width: 50%;
   }  
 
 #section1Image {
-    position: absolute; /* Set the image to an absolute position within the container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the image properly */
-    z-index: 1; /* Place the image on top of the background */
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
     height: auto;
     width: auto;
   }
@@ -275,3 +275,70 @@
   background-color: #004577;
   padding-bottom: 80px;
 }
+
+ /* Stylinfg for the footer Section*/
+ footer {
+  background-color: #111;
+}
+
+#footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+#footerTitle {
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+  padding-bottom: 20px;
+}
+
+#socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+#socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: black;
+  margin: 10px;
+  border-radius: 50%
+}
+
+#socialIcons a i {
+  font-size: 2em;
+  color: #111;
+  opacity: 0.9;
+}
+
+.smIcon {
+  width: auto;
+  height: 32px;
+}
+
+#socialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+#socialIcons a:hover i {
+  color: red;
+  transition: 0.5s;
+}
+
+#footerBottom p{
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
