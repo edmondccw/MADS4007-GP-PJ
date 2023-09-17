@@ -1,0 +1,43 @@
+body{
+    margin: 0%;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main header+section {
+    margin-top: 7vh;
+}
+
+#nav{
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);  
+    backdrop-filter: blur(10px);
+    padding-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+}
+
+.navLink{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 22px;
+    font-family: 'Rapier Zero Hollow', sans-serif;
+}
+
+.navLink:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+footer {
+
+}

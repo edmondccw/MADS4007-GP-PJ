@@ -1,15 +1,60 @@
+#purchaseForm {
+    background-color: grey;
+    width: 70%;
+    margin: 10vh auto;
+    border-radius: 1em;
+    box-shadow: 0 0 10px orange;
+    padding-bottom: 5px;
+}
+
+#purchaseForm h2 {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2.5px solid black;
+}
+
+#purchaseForm input[type="number"] {
+    background-color: lightgray;
+    border-radius: 7px;
+    width: 70%;
+    margin-left: 2%;
+}
+
+#purchaseForm div {
+    display: block;
+    /* border: 1px solid black; */
+    padding: 1em 2em
+}
+
 #errorMessage {
     color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+#payNow {
+    display: block;
+    border: 4px outset darkgray;
+    border-radius: 5px;
+    background-color: lightgrey;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#payNow:active {
+    background-color: darkgray;
+    border: 4px inset lightgray;
 }
 
 #orderSummary table{
-    border: 1px solid black;
     border-collapse: collapse;
-    margin: 20% auto;
+    margin: 0 auto;
 }
 
-#orderSummary td{
-    border: 1px solid black;
+#orderSummary th,#orderSummary td {
+    color: white;
+    border: 1px solid white;
     padding: 10px;
     width: 30%;
 }

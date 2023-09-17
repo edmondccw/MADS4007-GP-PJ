@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/purchaseTicket.css">
+    <script src="./js/initialize.js" defer="true"></script>
     <script src="./js/purchaseTicket.js" defer="true"></script>
 </head>
 <body>
-    <header></header>
+    <header id="nav"></header>
 
     <main>
         <section id="purchaseForm">
-            <label>Ticket Type: </label>
-            <input type="radio" name="ticketType" value="100" checked="true">  <!--discuss the value in meeting-->
-            <label for="ticketType">One Day Pass</label>
-            <input type="radio" name="ticketType" value="200">  <!--discuss the value in meeting-->
-            <label for="ticketType">All Access Pass</label>
+            <h2>Purchase Form</h2>
+            <div id="ticketType">
+                <label>Ticket Type: </label>
+                <input type="radio" name="ticketType" value="100" checked="true">  <!--discuss the value in meeting-->
+                <label for="ticketType">One Day Pass</label>
+                <input type="radio" name="ticketType" value="200">  <!--discuss the value in meeting-->
+                <label for="ticketType">All Access Pass</label>
+            </div>
 
-            <label for="quantity">Quantity of Tickets: </label>
-            <input type="number" name="quantity" placeholder="Please enter the quantity of tickets (at least 1)">
+            <div id="ticketQtn">
+                <label for="quantity">Quantity of Tickets: </label>
+                <input type="number" name="quantity" placeholder="Please enter the quantity of tickets (at least 1)">
+            </div>
 
-            <label for="creditCardNumber">Credit Card Number: </label>
-            <input type="number" name="creditCardNumber" placeholder="Please enter a credit card number (exactly 6 digits)">
+            <div id="creditCardNumber">
+                <label for="creditCardNumber">Credit Card Number: </label>
+                <input type="number" name="creditCardNumber" placeholder="Please enter a credit card number (exactly 6 digits)">
+            </div>
 
             <button id="payNow" >Pay Now</button>
         </section>
@@ -32,6 +41,6 @@
         
     </main>
 
-    <footer></footer>
+    <footer id="contact"></footer>
 </body>
 </html>

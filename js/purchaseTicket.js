@@ -36,6 +36,7 @@ const displayOrderSummary = (ticketQtn, ticketPrice) => {
 
 
     let orderSummaryHtml = "<table>"
+    orderSummaryHtml += "<tr><th>Order Summary</th></tr>"
     for(key in infoToBeShown){
         console.log("info is ", key)
         // orderSummary.innerHTML += `<p>${key}: ${infoToBeShown[key]}</p>`
