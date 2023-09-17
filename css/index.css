@@ -1,5 +1,5 @@
 /* Home Section*/
-#festival-info {
+#festivalInfo {
     background: rgba(255, 255, 255, 0.2); /* Glass effect background color */
     padding: 20px;
     border-radius: 10px;
@@ -14,7 +14,7 @@
     gap: 15%;
 }
 
-#festival-details {
+#festivalDetails {
     width: 30%; /* Takes up 2/3 of the width */
     padding-left: 3%;
 }
@@ -29,27 +29,27 @@
 }
 
 /* Styling for the card */
-.card-body {
+.cardBody {
     min-height: auto;
 }
 
-.slide-container {
+.slideContainer {
     width: 100%; /* Adjust as needed */
     margin: 0 auto; /* Center the content horizontally */
 }
 
-.slide-content{
+.slideContent{
     margin: auto;
 }
 
-.image-content, .card-content {
+.imageContent, .cardContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
 }
 
-.image-content {
+.imageContent {
     position: relative;
     row-gap: 5px;
 }
@@ -72,13 +72,13 @@
     border-radius: 25px 25px 0 25px;
 }
 
-.card-image{
+.cardImage{
     position: relative;
     height: 150px;
     width: 150px;
 }
 
-.card-image .card-img{
+.cardImage .cardImg{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -121,7 +121,7 @@
 }
 
 /* Styling for the Featured Anime Image */
-#featured-anime {
+#featuredAnime {
     width: 50%;
     padding: 10px;
     margin: 0 auto; /* Center horizontally */
@@ -133,7 +133,7 @@ img[src^="./assets/"] {
 }
 
 @media (max-width: 1800px) {
-    #festival-info {
+    #festivalInfo {
         display: flex;
         flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
         justify-content: center;
@@ -142,12 +142,12 @@ img[src^="./assets/"] {
         flex-direction: column-reverse;
     }
 
-    #festival-details {
+    #festivalDetails {
         width: 100%; /* Adjusted to take up full width on smaller screens */
         padding-left: 0%;
     }
 
-    #featured-anime {
+    #featuredAnime {
         order: 2; /* Move the featured image below other content on smaller screens */
         width: 100%; /* Full width on smaller screens */
         padding: auto; /* Adjust padding for spacing */
@@ -168,7 +168,7 @@ img[src^="./assets/"] {
 
 
 /* Styling for the Tickets and Pricing Section */
-#tickets-pricing {
+#ticketsPricing {
     text-align: center;
     padding: 20px;
     height: auto;
@@ -179,25 +179,25 @@ img[src^="./assets/"] {
 
 }
 
-#price-title {
+#priceTitle {
     font-size: 4rem;
     color: #005A8D;
 }
 
-#price-subtitle{
+#priceSubtitle{
     font-size: 2rem;
     color: #333;
     padding-bottom: 100px;
 }
 
-.pricing-options {
+.pricingOptions {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     justify-content: center;
     gap: 20%;
 }
 
-.pricing-option {
+.pricingOption {
     background-color: #F5F5F5;
     padding: 20px;
     border-radius: 10px;
@@ -207,17 +207,17 @@ img[src^="./assets/"] {
 }
 
 @media (max-width: 906px) {
-    .pricing-options {
+    .pricingOptions {
         gap: 10%; /* Reduce the gap between pricing options for smaller screens */
     }
 
-    .pricing-option{
+    .pricingOption{
         width: 100%;
     }
 }
 
 
-.pricing-details {
+.pricingDetails {
     text-align: left;
     display: flex;
     justify-content: center;
@@ -225,7 +225,7 @@ img[src^="./assets/"] {
     flex-direction: column;
 }
 
-#plan-name {
+#planName {
     font-size: 1.5rem;
     color: #333;
 }
@@ -250,7 +250,7 @@ img[src^="./assets/"] {
     margin: 5px 0;
 }
 
-.buy-button {
+.buyButton {
     display: inline-block;
     background-color: #005A8D;
     color: white;
@@ -266,20 +266,20 @@ img[src^="./assets/"] {
 
 }
 
-.buy-button:hover {
+.buyButton:hover {
     background-color: #004577;
 }
 
 /* Styling for the Map Section */
 
 
-#Location {
+#location {
     padding-top: 20px;
     text-align: center;
     color: #F5F5F5;
 }
 
-#festival-map {
+#festivalMap {
     background-color: #004577;
     padding-bottom: 5%;
 }
