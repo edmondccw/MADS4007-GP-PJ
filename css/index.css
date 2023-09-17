@@ -150,29 +150,29 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 @media (max-width: 1100px) {
   #cardImage {
-    width: 300px; /* Set the desired width */
-    height: 250px; /* Set the desired height */
+    width: 300px;
+    height: 250px;
   }
 }
 
 @media (max-width: 600px) {
   #cardImage {
-    width: 150px; /* Set the desired width */
-    height: 125px; /* Set the desired height */
-  }
+    width: 150px;
+    height: 125px;
+}
 }
 
 @media (max-width: 330px) {
   #cardImage {
-    width: 75px; /* Set the desired width */
-    height: 62.5px; /* Set the desired height */
+    width: 75px;
+    height: 62.5px;
   }
 }
 
 @media (max-width: 200px) {
   #cardImage {
-    width: 37.5px; /* Set the desired width */
-    height: 31.25px; /* Set the desired height */
+    width: 37.5px;
+    height: 31.25px;
   }
 }
 
