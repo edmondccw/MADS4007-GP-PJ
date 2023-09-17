@@ -1,27 +1,39 @@
 body{
     margin: 0%;
-    background-color: darkgrey;
+    background-color: black;
 }
 
 #nav{
     display: flex;
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);  
+    backdrop-filter: blur(10px);
+    padding-bottom: 10px;
+    flex-direction: row;
     flex-direction: row;
     justify-content: space-evenly;
+    justify-content: space-evenly;
+    position: fixed;
     background-color: black;
-    padding-bottom: 5px;
+    width: 100%;
 }
 
 .navLink{
     text-decoration: none;
+    text-decoration: none;
     color: white;
+    color: white;
+    font-size: 25px;
     font-size: 20px;
     font-weight: 600;
+    font-weight: 600;
+    padding-top: 22px;
     padding-top: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Rapier Zero Hollow', sans-serif;
 }
 
 .navLink:hover {
-    color: blue;
+    color: orange;
     text-decoration: underline;
 }
 

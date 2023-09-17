@@ -24,7 +24,7 @@ main{
 
 .animeCard{
     display: inline-flex;
-    background-color: aquamarine;
+    background-color: orange;
     width: 1000px;
     height: 400px;
     margin: 5% auto;
@@ -38,22 +38,76 @@ main{
     border-bottom-left-radius: 10px;
 }
 
-#animeInfo{
+.test{
+    font-family: 'Prompt', sans-serif;
+}
+
+.animeInfo{
+    color: black;
     width: 100%;
     padding-left: 15px;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#animeName{
-    font-weight: 500;
+.animeName{
+    font-weight: 900;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .buyTicketBtn{
-    background-color: black;
+    background-color: orangered;
     color: white;
-    /* padding: 10px; */
+    padding: 10px;
     text-decoration: none;
+    border-radius: 10px;
 }
+
+.animeInfo p{
+    color: black;
+}
+
+/* HomePage image and text Css*/
+/* #homepageImage{
+    filter: brightness(70%);
+    height: 100vh;
+    width: 100%;
+}
+#homeImageAndText{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.homeText {
+    color: orange;
+    padding: 0px 15px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0, 0.4);  
+    backdrop-filter: blur(5px);
+    font-size: 70px;
+    font-weight: 100;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Rapier Zero', sans-serif;
+  }
+  
+.locationText {
+    color: black;
+    padding: 0px 15px;
+    border-radius: 10px;
+    background: rgb(255,165,0, 1);  
+    backdrop-filter: blur(5px);
+    font-size: 35px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-family: 'Rapier Zero Hollow', sans-serif;
+  } */
+  
+  /* homePage Image and Text End */
