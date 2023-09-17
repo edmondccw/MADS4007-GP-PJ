@@ -1,5 +1,11 @@
 console.log("initializing")
 
+const initializeHead = () => {
+    document.querySelector("head").innerHTML += '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+                                                <link href="https://fonts.cdnfonts.com/css/rapier-zero-hollow" rel="stylesheet">\
+                                                <link href="https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap" rel="stylesheet"></link>'
+}
+
 const initializeHeader = () => {
     document.getElementById("nav").innerHTML = '<a href="./index.html" class="navLink">HOME</a>\
                                                 <a href="#" class="navLink">SCHEDULE</a>\
@@ -11,5 +17,6 @@ const initializeFooter = () => {
     // TODO
 }
 
+initializeHead()
 initializeHeader()
 initializeFooter()
