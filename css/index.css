@@ -1,286 +1,261 @@
-/* Home Section*/
+/* font style*/
+#dates, #location, #address, #priceSubtitle, #price, #price, #planName, .buyButton, li {
+    font-family: 'Prompt', sans-serif;
+}
+
+
+/* Styling for the Festival Section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#infoBg {
+  background-image: url(../assets/FesInfoBg.png);
+  background-color: #333;
+  padding: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #festivalInfo {
-    background: rgba(255, 255, 255, 0.2); /* Glass effect background color */
-    padding: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px); /* Apply a blur effect to create the glass effect */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Align items horizontally */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 20px;
-    height: 80vh;
-    background-color: #333;
-    gap: 15%;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: auto;
+  gap: 15%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #festivalDetails {
-    width: 30%; /* Takes up 2/3 of the width */
-    padding-left: 3%;
+  width: 30%;
+  padding-left: 3%;
 }
 
 #fesName {
-    font-size: 3rem;
-    color: #005A8D; /* Festival name color */
-    margin: 0;
-    padding-left: 0%;
-    text-align: center;
-    padding-bottom: 50px;
+  font-size: 10rem;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
-/* Styling for the card */
-.cardBody {
-    min-height: auto;
+#dateLocationContainer {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.slideContainer {
-    width: 100%; /* Adjust as needed */
-    margin: 0 auto; /* Center the content horizontally */
+#dates,
+#location {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
-.slideContent{
-    margin: auto;
-}
-
-.imageContent, .cardContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.imageContent {
-    position: relative;
-    row-gap: 5px;
-}
-
-.card {
-    width: 100%; /* Adjust as needed */
-    border-radius: 25px;
-    background-color: #fff;
-}
-
-.overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #4070f4;
-    border-radius: 25px 25px 0 25px;
-}
-
-.cardImage{
-    position: relative;
-    height: 150px;
-    width: 150px;
-}
-
-.cardImage .cardImg{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #f2f3f5;
-}
-
-.name {
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-}
-
-.location {
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
-}
-
-.viewmap {
-    border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: #4070f4;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-}
-
-.viewmap:hover {
-    background-color: #265df2;
-}
-
-#viewMapB {
-    text-decoration: none;
-    color: #FFF;
+#address {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin: 0;
 }
 
 /* Styling for the Featured Anime Image */
+#section1ImageBG {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 #featuredAnime {
-    width: 50%;
-    padding: 10px;
-    margin: 0 auto; /* Center horizontally */
-}
-img[src^="./assets/"] {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the image */
-}
+    position: relative; /* Set the container to a relative position */
+    width: 50%; /* Adjust the width as needed */
+  }  
+
+#section1Image {
+    position: absolute; /* Set the image to an absolute position within the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the image properly */
+    z-index: 1; /* Place the image on top of the background */
+    height: auto;
+    width: auto;
+  }
+  
 
 @media (max-width: 1800px) {
-    #festivalInfo {
-        display: flex;
-        flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-        justify-content: center;
-        gap: 10px;
-        height: auto;
-        flex-direction: column-reverse;
-    }
+  #festivalInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    flex-direction: column;
+  }
 
-    #festivalDetails {
-        width: 100%; /* Adjusted to take up full width on smaller screens */
-        padding-left: 0%;
-    }
+  #festivalDetails {
+    width: 100%;
+    padding-left: 0%;
+  }
 
-    #featuredAnime {
-        order: 2; /* Move the featured image below other content on smaller screens */
-        width: 100%; /* Full width on smaller screens */
-        padding: auto; /* Adjust padding for spacing */
-    }
+  #featuredAnime {
+    order: 2;
+    width: 100%;
+    padding: auto;
+  }
 
-    #fesName {
-        font-size: 2rem; /* Reduced font size for smaller screens */
-        color: #005A8D; /* Festival name color */
-        margin: 0;
-        padding-left: 0;
-        text-align: center;
-    }
+  #fesName {
+    font-size: 4.5rem;
+    color: #fff;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+  }
 
+  #dateLocationContainer {
+    width: 60%;
+    margin-left: 0%;
+  }
 
+  #dates,
+  #location {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
 
+  #address {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
 }
 
-
-
 /* Styling for the Tickets and Pricing Section */
-#ticketsPricing {
-    text-align: center;
-    padding: 20px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
+#tickets-pricing {
+  text-align: center;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 #priceTitle {
-    font-size: 4rem;
-    color: #005A8D;
+  font-size: 4rem;
+  color: #005a8d;
 }
 
-#priceSubtitle{
-    font-size: 2rem;
-    color: #333;
-    padding-bottom: 100px;
+#priceSubtitle {
+  font-size: 2rem;
+  color: #333;
+  padding-bottom: 100px;
 }
 
 .pricingOptions {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-    justify-content: center;
-    gap: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
 }
 
 .pricingOption {
-    background-color: #F5F5F5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-    width: 300px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  width: 500px;
 }
 
-@media (max-width: 906px) {
-    .pricingOptions {
-        gap: 10%; /* Reduce the gap between pricing options for smaller screens */
-    }
+@media (max-width: 1800px) {
+  .pricingOptions {
+    gap: 5%;
+  }
 
-    .pricingOption{
-        width: 100%;
-    }
+  .pricingOption {
+    width: 100%;
+  }
 }
-
 
 .pricingDetails {
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 #planName {
-    font-size: 1.5rem;
-    color: #333;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 .price {
-    font-size: 1.25rem;
-    color: #005A8D;
-    margin: 10px 0;
+  font-size: 1.25rem;
+  color: #005a8d;
+  margin: 10px 0;
 }
 
 .feature {
-    padding: 10px;
-    padding-bottom: 130px;
+  padding: 10px;
+  padding-bottom: 130px;
 }
 
 .features {
-    padding: 10px;
+  padding: 10px;
 }
 
 .features li {
-    font-size: 1rem;
-    margin: 5px 0;
+  font-size: 1rem;
+  margin: 5px 0;
 }
 
 .buyButton {
-    display: inline-block;
-    background-color: #005A8D;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    margin-top: 10px;
-    margin-left: 22.5%;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    width: 40%;
-
+  display: inline-block;
+  background-color: #005a8d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 22.5%;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 40%;
 }
 
 .buyButton:hover {
-    background-color: #004577;
+  background-color: #004577;
 }
 
 /* Styling for the Map Section */
-
-
-#location {
-    padding-top: 20px;
-    text-align: center;
-    color: #F5F5F5;
+#locationTitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 4rem;
+  text-align: center;
+  color: #f5f5f5;
 }
 
-#festivalMap {
-    background-color: #004577;
-    padding-bottom: 5%;
+#festival-map {
+  background-color: #004577;
+  padding-bottom: 80px;
 }
-

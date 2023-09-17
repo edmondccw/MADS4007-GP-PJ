@@ -4,72 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AnimeQuest Toronto</title>
-    <!--Remixicons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
-    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <!-- Map Js-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
       integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
       crossorigin=""
     />
-    <script src="./js/initialize.js" defer="true"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"> -->
+
+    <script src="js/initialize.js" defer="true"></script>
   </head>
   <body>
-    <main>
-      <header id="nav"></header>
+    <header id="nav"></header>
 
-      <section id="festivalInfo">
+    <main>
+      <!--Festival Section -->
+      <section id="infoBg">
+      <div id="festivalInfo">
         <div id="festivalDetails">
           <h1 id="fesName">AnimeQuest Toronto</h1>
-          <div class="cardBody">
-            <div class="slideContainer">
-                <div class = "slideContent">
-                    <div class = "card-wrapper">
-                        <div class="card">
-                            <div class="imageContent">
-                                <span class="overlay"></span>
-        
-                                <div class="cardImage">
-                                    <img src="./assets/gbc.jpg" alt="" class="cardImg">
-                                </div>
-        
-                            </div>
-                            <div class="cardContent">
-                                <h2 class="name"> Oct 20-22, 2023</h2>
-                                <p class="location"> George Brown College - Casa Loma Campus, Toronto, Canada</p>
-                                <button class="viewmap"> <a href="#map" id="viewMapB">View Map</a></button>
-                            </div>
-        
-        
-        
-        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
         <div id="featuredAnime">
-          <img id="section1" src="./assets/featuredAnime.jpeg" alt="Featured Anime" />
+          <img id="section1ImageBG" src="./assets/featuredBG.jpg" alt="Featured Anime" />
+          <img id="section1Image" src="./assets/featuredAnime.png">
         </div>
+        <div id="dateLocationContainer">
+          <p id="dates">Sep 25-27, 2023</p>
+          <p id="location">George Brown College Casa Loma</p>
+          <p id="address">175 Kendal Ave, Toronto, ON M5R 3S8</p>
+        </div>
+      </div>
       </section>
+      
 
-      <section id="ticketsPricing">
+      <!-- P & T Section -->
+      <section id="tickets-pricing">
         <h2 id="priceTitle">Tickets and Pricing</h2>
         <p id="priceSubtitle">Choose the ticket option that suits you best.</p>
         <div class="pricingOptions">
           <div class="pricingOption">
             <div class="pricingDetails">
               <h3 id="planName">Otaku Demon Slayer Pass</h3>
-              <p class="price">$100</p>
+              <p class="price">$99</p>
               <ul class="feature">
                 <li>
                   Harness the power of the Demon Slayer Corps with all-day
@@ -84,8 +66,8 @@
           </div>
           <div class="pricingOption">
             <div class="pricingDetails">
-              <h3>Slayer of Anime Darkness Pass</h3>
-              <p class="price">$200</p>
+              <h3 id="planName">Slayer of Anime Darkness Pass</h3>
+              <p class="price">$299</p>
               <ul class="features">
                 <li>
                   Embrace the ultimate anime adventure with unlimited access to
@@ -109,11 +91,11 @@
         </div>
       </section>
 
-      <section id="festivalMap">
+      <section id="festival-map">
         <div class="mapBlock">
-          <h2 id="location">Festival Location</h2>
+          <h2 id="locationTitle">Festival Location</h2>
 
-          <!-- Specify the map and it's dimensions -->
+          <!-- Map Section -->
           <div id="map" style="width: 100%; height: 500px"></div>
           <script
             src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
@@ -121,33 +103,21 @@
             crossorigin=""
           ></script>
           <script>
-            // Initialize the map
             const map = L.map("map");
-
-            // Get the tile layer from OpenStreetMaps
             L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-              // Specify the maximum zoom of the map
               maxZoom: 19,
-
-              // Set the attribution for OpenStreetMaps
               attribution:
                 '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             }).addTo(map);
-
-            // Set the view of the map
-            // with the latitude, longitude and the zoom value
             map.setView([43.64306309536304, -79.38716408835465], 12); 
+            let gbcMarker = L.marker([43.67620902155788, -79.41028307385125]).addTo(map);
 
-            // Show a marker at the position
-            let locationMarker = L.marker([43.67620902155788, -79.41028307385125]).addTo(map);
-
-            // Bind popup to the marker with a popup
-            locationMarker.bindPopup("George Brown College - Casa Loma Campus").openPopup();
+            gbcMarker.bindPopup("George Brown College - Casa Loma Campus").openPopup();
           </script>
         </div>
       </section>
-
-      <footer id="contact"></footer>
     </main>
+
+    <footer id="contact"></footer>
   </body>
 </html>
