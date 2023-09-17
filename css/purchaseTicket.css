@@ -3,7 +3,7 @@
     width: 70%;
     margin: 10vh auto;
     border-radius: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 10px orange;
     padding-bottom: 5px;
 }
 
@@ -48,19 +48,13 @@
 }
 
 #orderSummary table{
-    border: 1px solid black;
     border-collapse: collapse;
-    margin: 10vh auto;
+    margin: 0 auto;
 }
 
-#orderSummary th {
-    border: 1px solid black;
-    padding: 10px;
-    width: 30%;
-}
-
-#orderSummary td{
-    border: 1px dashed black;
+#orderSummary th,#orderSummary td {
+    color: white;
+    border: 1px solid white;
     padding: 10px;
     width: 30%;
 }
