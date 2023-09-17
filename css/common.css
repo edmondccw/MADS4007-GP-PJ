@@ -1,0 +1,30 @@
+body{
+    margin: 0%;
+    background-color: darkgrey;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    padding-bottom: 5px;
+}
+
+.navLink{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.navLink:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+
+}

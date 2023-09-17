@@ -126,7 +126,7 @@
     padding: 10px;
     margin: 0 auto; /* Center horizontally */
 }
-img {
+img[src^="./assets/"] {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the image */

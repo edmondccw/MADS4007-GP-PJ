@@ -1,22 +1,22 @@
-body{
+/* body{
     margin: 0%;
-}
+} */
 
-#nav{
+/* #nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: black;
-}
+} */
 
-.navLink{
+/* .navLink{
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: 600;
     padding-top: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
+} */
 
 main{
     display: flex;
