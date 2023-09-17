@@ -14,7 +14,20 @@ const initializeHeader = () => {
 }
 
 const initializeFooter = () => {
-    // TODO
+    document.querySelector("footer").innerHTML = '<h2 id="footerTitle">Connect with us</h2>\
+                                                <div id="socialIcons">\
+                                                <a target="_blank" href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"><img src="./assets/icons/FB.png" alt="fbIcon" class="smIcon"></i></a>\
+                                                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"><img src="./assets/icons/IG.png" alt="igIcon" class="smIcon"></i></a>\
+                                                <a target="_blank" href="https://www.snapchat.com/"><i class="fa-brands fa-snapchat"><img src="./assets/icons/SC.png" alt="scIcon" class="smIcon"></i></a>\
+                                                <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"><img src="./assets/icons/TWT.png" alt="ytIcon" class="smIcon"></i></a>\
+                                                <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"><img src="./assets/icons/YT.png" alt="ytIcon" class="smIcon"></i></a>\
+                                                </div>\
+                                                <div id="footerBottom">\
+                                                <p id="copyright">\
+                                                    Copyright &copy; 2023; Designed by\
+                                                    <span id="designer">AnimeQuest Toronto</span>\
+                                                </p>\
+                                                </div>'
 }
 
 initializeHead()
