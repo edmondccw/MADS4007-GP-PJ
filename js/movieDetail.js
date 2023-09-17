@@ -91,7 +91,7 @@ let animeData = ``;
                         <br>
                         <p>Hurry up, Only few left!!</p>
                         <br>
-                        <a href="#" class="buyTicketBtn">Buy Tickets</a>
+                        <a href="./purchaseTicket.html" class="buyTicketBtn">Buy Tickets</a>
                     </div>
                     </div>
             </li>`
