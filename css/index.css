@@ -238,11 +238,19 @@ flex-direction: column;
 .planName {
 font-size: 1.5rem;
 color: #526D82;
+text-align: center;
+}
+
+.planImg {
+  width: 80px;
+  height: 80px;
+  align-self: center;
 }
 
 .price {
-font-size: 1.25rem;
+font-size: 2rem;
 color: #27374D;
+text-align: center;
 margin: 10px 0;
 }
 
