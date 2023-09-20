@@ -28,6 +28,8 @@ main section {
     justify-content: space-evenly;
     position: fixed;
     width: 100%;
+    /* make the header always on the topest image layer */
+    z-index: 10;  
 }
 
 .navLink {
