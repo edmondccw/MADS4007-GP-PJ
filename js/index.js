@@ -21,9 +21,3 @@ let gbcMarker = L.marker([
 
 gbcMarker.bindPopup("George Brown College - Casa Loma Campus").openPopup();
 
-
-// testing: delete this
-const buyTicketButtons = document.querySelector(".buyButton")
-console.log("buy ", buyTicketButtons)
-
-buyTicketButtons.addEventListener("click", getTicketType)

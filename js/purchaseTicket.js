@@ -1,20 +1,3 @@
-console.log("loading purchase ticket")
-
-const selectTicketType = () => {
-    const type = document.URL.split("?type=")[1]
-
-    const radioBtns = document.querySelectorAll('input[type="radio"]')  
-    
-    // select the cheapest type (type 2) by default
-    if(type === "2"){
-        radioBtns[1].checked = "true"
-    }
-    else{
-        radioBtns[0].checked = "true"
-    }
-}
-
-
 const clearOrderSummaryAndErrorMsg = () => {
     document.getElementById("errorMessage").innerHTML = ""
     document.getElementById("orderSummary").innerHTML = ""
@@ -95,8 +78,6 @@ const validatePurchaseForm = () => {
    }
 }
 
-// check the suitable radio button. By default, select the cheapest ticket option
-selectTicketType()
 
 // adding event listeners when the script is loaded
 const payNowBtn = document.getElementById("payNow")
