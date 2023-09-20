@@ -1,9 +1,9 @@
 /* font style*/
-#priceSubtitle, #price, #price, #planName, .buyButton, li, #footerBottom p {
+#priceSubtitle, #price, #price, #planName, .buyButton, li, #footerBottom p, #dates, #location, #address {
   font-family: 'Prompt', sans-serif;
 }
 
-#fesName, #dates, #location, #address, #priceTitle, #locationTitle, #footerTitle {
+#fesName, #priceTitle, #locationTitle, #footerTitle {
 font-family: 'Rapier Zero Hollow', sans-serif;
 }
 
@@ -248,10 +248,12 @@ margin: 10px 0;
 .feature {
 padding: 10px;
 padding-bottom: 130px;
+list-style-type: square;
 }
 
 .features {
 padding: 10px;
+list-style-type: square;
 }
 
 .features li {

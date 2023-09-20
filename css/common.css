@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
 body {
     margin: 0%;
     background-color: black;
@@ -46,64 +52,69 @@ footer {
     font-family: 'Prompt', sans-serif;
 }
 
+#footerTitle {
+    font-family: 'Rapier Zero Hollow', sans-serif;
+    }
+
+/* Stylinfg for the footer Section*/
 #footerContainer {
     width: 100%;
     padding: 70px 30px 20px;
-}
-
-#footerTitle {
+    }
+    
+    #footerTitle {
     color: white;
     text-align: center;
     font-size: 3.5rem;
     padding-bottom: 20px;
-    font-family: 'Rapier Zero Hollow', sans-serif;
-}
-
-#socialIcons {
+    }
+    
+    #socialIcons {
     display: flex;
     justify-content: center;
-}
-
-#socialIcons a {
+    }
+    
+    #socialIcons a{
     text-decoration: none;
     padding: 10px;
     background-color: black;
     margin: 10px;
-    border-radius: 50%
-}
-
-#socialIcons a i {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    }
+    
+    #socialIcons a i {
     font-size: 2em;
     color: #111;
     opacity: 0.9;
-}
-
-.smIcon {
-    width: auto;
-    height: 32px;
-}
-
-#socialIcons a:hover {
+    }
+    
+    .smIcon {
+    width: 50px;
+    height: 50px;
+    }
+    
+    #socialIcons a:hover {
     background-color: #111;
     transition: 0.5s;
-}
-
-#socialIcons a:hover i {
-    color: red;
+    }
+    
+    #socialIcons a:hover i {
     transition: 0.5s;
-}
-
-#footerBottom p {
+    }
+    
+    #footerBottom p{
     color: white;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-#designer {
+    }
+    
+    #designer {
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
-}
+    }
