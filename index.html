@@ -16,7 +16,14 @@
       integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
       crossorigin=""
     />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+      defer="true"
+    ></script>
     <script src="js/initialize.js" defer="true"></script>
+    <script src="./js/index.js" defer="true"></script>
   </head>
   <body>
     <header id="nav"></header>
@@ -44,7 +51,7 @@
         </div>
       </section>
 
-      <!-- P & T Section -->
+      <!-- Tickets & Pricing Section -->
       <section id="ticketsPricing">
         <h2 id="priceTitle">Tickets and Pricing</h2>
         <p id="priceSubtitle">Choose the ticket option that suits you best.</p>
@@ -63,7 +70,7 @@
                   Master your skills and save with 7% off all snacks and drinks
                 </li>
               </ul>
-              <a href="./purchaseTicket.html" class="buyButton">BUY TICKETS</a>
+              <a href="./purchaseTicket.html?type=1" class="buyButton">BUY TICKETS</a>
             </div>
           </div>
           <div class="pricingOption">
@@ -88,7 +95,7 @@
                   greets with your favorite anime stars
                 </li>
               </ul>
-              <a href="./purchaseTicket.html" class="buyButton">BUY TICKETS</a>
+              <a href="./purchaseTicket.html?type=2" class="buyButton">BUY TICKETS</a>
             </div>
           </div>
         </div>
@@ -97,50 +104,13 @@
       <section id="festivalMap">
         <div class="mapBlock">
           <h2 id="locationTitle">Festival Location</h2>
-
           <!-- Map Section -->
           <div id="map" style="width: 100%; height: 500px"></div>
-          <script
-            src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-            crossorigin=""
-          ></script>
-          <script>
-            const map = L.map("map");
-            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-              maxZoom: 19,
-              attribution:
-                '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            }).addTo(map);
-            map.setView([43.64306309536304, -79.38716408835465], 12);
-            let gbcMarker = L.marker([
-              43.67620902155788, -79.41028307385125,
-            ]).addTo(map);
-
-            gbcMarker
-              .bindPopup("George Brown College - Casa Loma Campus")
-              .openPopup();
-          </script>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footerContainer">
-      <h2 id="footerTitle">Connect with us</h2>
-      <div id="socialIcons">
-        <a href="https://www.facebook.com/login/" target ="_blank"><i><img src="./assets/icons/FB.png" alt="fbIcon" class="smIcon"></i></a>
-        <a href="https://www.instagram.com/" target ="_blank"><i><img src="./assets/icons/IG.png" alt="igIcon" class="smIcon"></i></a>
-        <a href="https://www.snapchat.com/" target ="_blank"><i><img src="./assets/icons/SC.png" alt="scIcon" class="smIcon"></i></a>
-        <a href="https://twitter.com/" target ="_blank"><i><img src="./assets/icons/TWT.png" alt="twtIcon" class="smIcon"></i></a>
-        <a href="https://www.youtube.com/" target ="_blank"><i><img src="./assets/icons/YT.png" alt="ytIcon" class="smIcon"></i></a>
-      </div>
-      <div id="footerBottom">
-        <p id="copyright">
-          Copyright &copy; 2023; Designed by
-          <span id="designer">AnimeQuest Toronto</span>
-        </p>
-      </div>
-    </footer>
+    <footer id="footerContainer"></footer>
   </body>
 </html>
