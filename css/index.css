@@ -1,9 +1,9 @@
 /* font style*/
-#priceSubtitle, #price, #price, #planName, .buyButton, li, #footerBottom p {
+#priceSubtitle, #price, #price, .planName, .buyButton, li, #footerBottom p, #dates, #location, #address {
   font-family: 'Prompt', sans-serif;
 }
 
-#fesName, #dates, #location, #address, #priceTitle, #locationTitle, #footerTitle {
+#fesName, #priceTitle, #locationTitle, #footerTitle {
 font-family: 'Rapier Zero Hollow', sans-serif;
 }
 
@@ -22,6 +22,7 @@ background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
+opacity: 0.9;
 }
 
 #festivalInfo {
@@ -234,24 +235,34 @@ align-content: center;
 flex-direction: column;
 }
 
-#planName {
+.planName {
 font-size: 1.5rem;
 color: #526D82;
+text-align: center;
+}
+
+.planImg {
+  width: 80px;
+  height: 80px;
+  align-self: center;
 }
 
 .price {
-font-size: 1.25rem;
+font-size: 2rem;
 color: #27374D;
+text-align: center;
 margin: 10px 0;
 }
 
 .feature {
 padding: 10px;
 padding-bottom: 130px;
+list-style-type: square;
 }
 
 .features {
 padding: 10px;
+list-style-type: square;
 }
 
 .features li {
@@ -316,6 +327,8 @@ padding: 10px;
 background-color: black;
 margin: 10px;
 border-radius: 50%;
+width: 70px;
+height: 70px;
 }
 
 #socialIcons a i {
@@ -325,8 +338,8 @@ opacity: 0.9;
 }
 
 .smIcon {
-width: auto;
-height: 32px;
+width: 50px;
+height: 50px;
 }
 
 #socialIcons a:hover {
