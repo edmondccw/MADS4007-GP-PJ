@@ -69,9 +69,9 @@ const loadTicketPlans = () => {
             pricingOptionsHtml += `\   
             <div class="pricingOption">\
                 <div class="pricingDetails">\
+                <img src=${ticket.imageUrl} alt=${ticket.imgAlt} class="planImg"/>\
                     <h3 class="planName">${ticket.name}</h3>\
                     <p class="price">$${ticket.price}</p>\
-                    <img src=${ticket.imageUrl} alt=${ticket.imgAlt} class="planImg"/>\
                     <ul class="feature">`
 
             for(feature of ticket.features){
