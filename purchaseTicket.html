@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/purchaseTicket.css">
-    <script src="./js/initialize.js" defer="true"></script>
+    <script src="./js/common.js" defer="true"></script>
     <script src="./js/purchaseTicket.js" defer="true"></script>
 </head>
 <body>
@@ -15,14 +15,7 @@
     <main>
         <section id="purchaseForm">
             <h2>Purchase Form</h2>
-            <div id="ticketType">
-                <label>Ticket Type: </label>
-                <input type="radio" name="ticketType" value="99" checked="true">  <!--discuss the value in meeting-->
-                <label for="ticketType">Otaku Demon Slayer Pass</label>
-                <input type="radio" name="ticketType" value="299">  <!--discuss the value in meeting-->
-                <label for="ticketType">Slayer of Anime Darkness Pass</label>
-            </div>
-
+            <div id="ticketType"></div>
             <div id="ticketQtn">
                 <label for="quantity">Quantity of Tickets: </label>
                 <input type="number" name="quantity" placeholder="Please enter the quantity of tickets (at least 1)">
@@ -41,6 +34,6 @@
         
     </main>
 
-    <footer id="contact"></footer>
+    <footer id="footerContainer"></footer>
 </body>
 </html>

@@ -1,23 +1,15 @@
-console.log("loading purchase ticket")
-
-
-// discuss where to hard code the ticket type, js/html
-const ticketTypes = [
-    {type: "One Day Pass", price: 95},
-    {type: "All Access Pass", price: 274}
-]
-
 const clearOrderSummaryAndErrorMsg = () => {
     document.getElementById("errorMessage").innerHTML = ""
     document.getElementById("orderSummary").innerHTML = ""
 }
 
 const displayOrderSummary = (ticketQtn, ticketPrice) => {
+    // remove existing order summary or error, if any
     clearOrderSummaryAndErrorMsg()
 
     ticketQtn = parseFloat(ticketQtn)
     ticketPrice = parseFloat(ticketPrice)
-    let orderSummary = document.getElementById("orderSummary")
+    const orderSummary = document.getElementById("orderSummary")
     console.log("order summary is ", orderSummary, ticketQtn, ticketPrice)
 
     // display all prices to 2 decimal points
@@ -26,7 +18,7 @@ const displayOrderSummary = (ticketQtn, ticketPrice) => {
     const finalPrice = (Number(subtotal) + Number(tax)).toFixed(2)
     console.log("final price is ", subtotal, tax, finalPrice)
 
-    let infoToBeShown = {
+    const infoToBeShown = {
         "Number of tickets": String(ticketQtn),
         "Price per ticket": "$" + String(ticketPrice.toFixed(2)),
         "Subtotal": "$" + String(subtotal),
@@ -48,6 +40,7 @@ const displayOrderSummary = (ticketQtn, ticketPrice) => {
 }
 
 const displayErrMsg = (errMsg) => {
+    // remove existing order summary or error, if any
     clearOrderSummaryAndErrorMsg()
     document.getElementById("errorMessage").innerHTML = errMsg
 }
@@ -84,6 +77,7 @@ const validatePurchaseForm = () => {
         displayOrderSummary(ticketQtn, ticketPrice)
    }
 }
+
 
 // adding event listeners when the script is loaded
 const payNowBtn = document.getElementById("payNow")
