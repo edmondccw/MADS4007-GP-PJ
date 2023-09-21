@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+}
+
 #purchaseForm {
     background-color: grey;
-    width: 70%;
+    width: 60%;
     margin: 10vh auto 3vh auto;
     border-radius: 1em;
     box-shadow: 0 0 10px orange;
     padding-bottom: 5px;
+    font-family: 'Prompt', sans-serif;
 }
 
 #purchaseForm h2 {
@@ -29,9 +34,11 @@
 
 #errorMessage {
     color: red;
+    /* margin-bottom: 3.8%; */
     text-align: center;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 150%;
+    font-family: 'Prompt', sans-serif;
 }
 
 #payNow {
@@ -49,6 +56,7 @@
 }
 
 #orderSummary table{
+    width: 50%;
     border-collapse: collapse;
     margin: 0 auto 5vh auto;
 }
@@ -59,3 +67,10 @@
     padding: 10px;
     width: 30%;
 }
+
+#ticketType {
+    display: flex;
+    gap: 2vw;
+}
+
+

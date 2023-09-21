@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* font style*/
 #priceSubtitle,
 #price,
@@ -207,24 +213,30 @@ li,
   padding-bottom: 100px;
 }
 
-.pricingOptions {
+#pricingOptions {
+  padding-top: 5%;
+  background-color: rgb(150, 10, 10);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10%;
+  gap: 2.5vw;
 }
 
 .pricingOption {
-  background-color: #f5f5f5;
+  background: linear-gradient(10deg, white 60%, rgb(185, 36, 36));
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
-  width: 500px;
+  width: 45vw;
 }
 
-@media (max-width: 1800px) {
-  .pricingOptions {
+.pricingOption:hover{
+  background: linear-gradient(10deg, white 20%, red);
+}
+
+@media (max-width: 1000px) {
+  #pricingOptions {
     gap: 5%;
   }
 
@@ -236,9 +248,10 @@ li,
 .pricingDetails {
   text-align: left;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   flex-direction: column;
+  height: 100%;
 }
 
 .planName {
@@ -293,7 +306,7 @@ li,
 }
 
 .buyButton:hover {
-  background-color: #526D82;
+  background-color: orange;
 }
 
 /* Styling for the Map Section */

@@ -22,7 +22,7 @@ const animeCard = [
         genre: "Action, Comedy horror, Dark fantasy"
     },
     {
-        imageUrl: "./assets/imgs/onepiece.jpg",
+        imageUrl: "./assets/imgs/onePiece.jpe",
         title: "One Piece",
         date: "Monday, sept 25th 2023",
         location: "George brown college casa loma campus",
@@ -43,6 +43,7 @@ const animeCard = [
         genre: "Mystery, Psychological thriller, Thriller"
     },
     {
+        // imageUrl: "https://i.ytimg.com/vi/Nq5MPsZiyyk/maxresdefault.jpg",
         imageUrl: "./assets/imgs/demonSlayer.jpg",
         title: "Demon Slayer",
         imgAlt: "An image of Demon Slayer",
@@ -75,7 +76,7 @@ const animeCard = [
         director: "Sunghoo Park",
         genre: "Adventure fiction, Dark fantasy, Supernatural fiction"
     }, {
-        imageUrl: "./assets/imgs/promiseNeverland.jpg",
+        imageUrl: "./assets/imgs/promisedNeverland.jpg",
         title: "Promise Neverland",
         imgAlt: "An image of Promise Neverland",
         date: "Wednesday, sept 27th 2023",
@@ -99,13 +100,15 @@ for (anime of animeCard) {
                 alt="${anime.imgAlt}" class="animePic">\
             <div class="animeInfo">\
                 <p class="animeName"">${anime.title}</p>\
+                <div id="animeDetail">
                 <p>${anime.date}</p>\
                 <p>${anime.location}</p>\
                 <p>Doors: ${anime.openingTime} | Show: ${anime.startTime}</p>\
                 <p>Directed by: ${anime.director}\
                 <p>Genre: ${anime.genre}\
+                <\div>\
                 <br>\
-                <p>Hurry up, Only few left!!</p>\
+                <p style="font-weight:bold; font-size: 1.5em">Hurry up, Only few left!!</p>\
                 <br>\
                 <a href="./purchaseTicket.html" class="buyTicketBtn">Buy Tickets</a>\
             </div>\

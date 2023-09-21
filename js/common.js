@@ -1,5 +1,3 @@
-console.log("initializing")
-
 const tickets = [
     {
         name: "Otaku Demon Slayer Pass",
@@ -45,11 +43,11 @@ const initializeHeader = () => {
 const initializeFooter = () => {
     document.querySelector("footer").innerHTML = '<h2 id="footerTitle">Connect with us</h2>\
                                                 <div id="socialIcons">\
-                                                <a target="_blank" href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"><img src="./assets/icons/FB.png" alt="fbIcon" class="smIcon"></i></a>\
-                                                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"><img src="./assets/icons/IG.png" alt="igIcon" class="smIcon"></i></a>\
-                                                <a target="_blank" href="https://www.snapchat.com/"><i class="fa-brands fa-snapchat"><img src="./assets/icons/SC.png" alt="scIcon" class="smIcon"></i></a>\
-                                                <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"><img src="./assets/icons/TWT.png" alt="ytIcon" class="smIcon"></i></a>\
-                                                <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"><img src="./assets/icons/YT.png" alt="ytIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://www.facebook.com/login/"><i><img src="./assets/icons/FB.png" alt="fbIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://www.instagram.com/"><i><img src="./assets/icons/IG.png" alt="igIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://www.snapchat.com/"><i><img src="./assets/icons/SC.png" alt="scIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://twitter.com/"><i><img src="./assets/icons/TWT.png" alt="ytIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://www.youtube.com/"><i><img src="./assets/icons/YT.png" alt="ytIcon" class="smIcon"></i></a>\
                                                 </div>\
                                                 <div id="footerBottom">\
                                                 <p id="copyright">\
@@ -61,7 +59,7 @@ const initializeFooter = () => {
 
 const loadTicketPlans = () => {
     const ticketsPricing = document.getElementById("ticketsPricing")
-    console.log("ticketsPricing is ", ticketsPricing)
+
     if(ticketsPricing !== undefined && ticketsPricing !== null){
         let pricingOptionsHtml = ""
 
@@ -96,8 +94,10 @@ const loadTicketTypes = () => {
         let ticketTypeHtml = "<label>Ticket Type: </label>"
 
         for(ticket of tickets){
-            ticketTypeHtml += `<input type="radio" name="ticketType" value="${ticket.price}">\
-                               <label for="ticketType">${ticket.name}</label>`
+            ticketTypeHtml += `<div>\
+                                    <input type="radio" name="ticketType" value="${ticket.price}">\
+                                    <label for="ticketType">${ticket.name}</label>\
+                                </div>`
         }
 
         ticketType.innerHTML = ticketTypeHtml
@@ -108,12 +108,10 @@ const loadTicketTypes = () => {
 const selectTicketType = () => {
     const purchaseForm = document.getElementById("purchaseForm")
 
-    console.log("in common, purchase form is ", purchaseForm)
     if(purchaseForm !== undefined && purchaseForm !== null){
         const price = document.URL.split("?price=")[1]
 
         const radioBtns = purchaseForm.querySelectorAll('input[type="radio"]')  
-        console.log("radiobtns are ", radioBtns, price)
 
         if(Number.isNaN(Number(price))|| price === null){
             // select the cheapest type by default, if no specific ticket is selected
@@ -127,12 +125,9 @@ const selectTicketType = () => {
                         cheapestPrice = tickets[i].price
                     }
                 }
-
             }
-            console.log("cheapest price is ", cheapestPrice)
+            
             const cheapestTicketIndex = tickets.indexOf(cheapestPrice)
-            console.log("cheapest ticket is ", cheapestTicketIndex)
-
 
             if(Number.isInteger(Number(cheapestTicketIndex) && cheapestTicketIndex >= 0)){
                 radioBtns[cheapestTicketIndex].checked = "true"
@@ -143,7 +138,6 @@ const selectTicketType = () => {
         }
         else{
             const selectedTicketIndex = tickets.findIndex((ticket) => Number(ticket.price) === Number(price))
-            console.log("selected ", selectedTicketIndex)
             radioBtns[selectedTicketIndex].checked = "true"
         }
     }
