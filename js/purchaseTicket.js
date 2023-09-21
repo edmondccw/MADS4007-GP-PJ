@@ -53,7 +53,7 @@ const validatePurchaseForm = () => {
      2. the credit card number has exactly 6 digits
      3. check if the quantity of tickets is an integer
     */
-   if(Number(creditCardNumber) === NaN || String(creditCardNumber).length !== 6){
+   if(creditCardNumber.length !== 6 || creditCardNumber.match(/^[0-9]{6}$/) === null){
         displayErrMsg("The credit card number should be exactly 6 digits long!")
    }
    else if(!Number.isInteger(Number(ticketQtn))){

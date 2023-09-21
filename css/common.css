@@ -6,7 +6,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    min-height: 70vh;
+    min-height: 90vh;
+    min-width: 100vw;
 }
 
 main section {
@@ -55,14 +56,14 @@ footer {
 
 #footerContainer {
     width: 100%;
-    padding: 70px 30px 20px;
+    padding: 1vh 1vw;
 }
 
 #footerTitle {
     color: white;
     text-align: center;
-    font-size: 3.5rem;
-    padding-bottom: 20px;
+    font-size: 1.75em;
+    margin: 0;
 }
 
 #socialIcons {
@@ -72,16 +73,16 @@ footer {
 
 #socialIcons a {
     text-decoration: none;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: black;
-    margin: 10px;
+    margin: 1vw;
     border-radius: 50%;
     width: 70px;
     height: 70px;
 }
 
 #socialIcons a i {
-    font-size: 2em;
+    font-size: 1em;
     color: #111;
     opacity: 0.9;
 }
@@ -103,8 +104,8 @@ footer {
 #footerBottom p {
     color: white;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
 }
 
 #designer {

@@ -7,7 +7,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 map.setView([43.64306309536304, -79.38716408835465], 12);
-let gbcMarker = L.marker([
+const gbcMarker = L.marker([
     43.67620902155788, -79.41028307385125,
 ]).addTo(map);
 

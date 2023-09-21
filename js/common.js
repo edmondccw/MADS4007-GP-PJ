@@ -43,11 +43,11 @@ const initializeHeader = () => {
 const initializeFooter = () => {
     document.querySelector("footer").innerHTML = '<h2 id="footerTitle">Connect with us</h2>\
                                                 <div id="socialIcons">\
-                                                <a target="_blank" href="https://www.facebook.com/login/"><i><img src="./assets/icons/FB.png" alt="fbIcon" class="smIcon"></i></a>\
-                                                <a target="_blank" href="https://www.instagram.com/"><i><img src="./assets/icons/IG.png" alt="igIcon" class="smIcon"></i></a>\
-                                                <a target="_blank" href="https://www.snapchat.com/"><i><img src="./assets/icons/SC.png" alt="scIcon" class="smIcon"></i></a>\
-                                                <a target="_blank" href="https://twitter.com/"><i><img src="./assets/icons/TWT.png" alt="ytIcon" class="smIcon"></i></a>\
-                                                <a target="_blank" href="https://www.youtube.com/"><i><img src="./assets/icons/YT.png" alt="ytIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://www.facebook.com/login/"><i><img src="./assets/icons/FB.png" alt="fbIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://www.instagram.com/"><i><img src="./assets/icons/IG.png" alt="igIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://www.snapchat.com/"><i><img src="./assets/icons/SC.png" alt="scIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://twitter.com/"><i><img src="./assets/icons/TWT.png" alt="ytIcon" class="smIcon"></i></a>\
+                                                    <a target="_blank" href="https://www.youtube.com/"><i><img src="./assets/icons/YT.png" alt="ytIcon" class="smIcon"></i></a>\
                                                 </div>\
                                                 <div id="footerBottom">\
                                                 <p id="copyright">\
@@ -94,8 +94,10 @@ const loadTicketTypes = () => {
         let ticketTypeHtml = "<label>Ticket Type: </label>"
 
         for(ticket of tickets){
-            ticketTypeHtml += `<input type="radio" name="ticketType" value="${ticket.price}">\
-                               <label for="ticketType">${ticket.name}</label>`
+            ticketTypeHtml += `<div>\
+                                    <input type="radio" name="ticketType" value="${ticket.price}">\
+                                    <label for="ticketType">${ticket.name}</label>\
+                                </div>`
         }
 
         ticketType.innerHTML = ticketTypeHtml
