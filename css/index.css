@@ -251,6 +251,8 @@ li,
   width: 80px;
   height: 80px;
   align-self: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .price {
@@ -274,6 +276,7 @@ li,
 .features li {
   font-size: 1rem;
   margin: 5px 0;
+  text-align: center;
 }
 
 .buyButton {
@@ -284,11 +287,9 @@ li,
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
-  margin-top: 10px;
-  margin-left: 30%;
   transition: background-color 0.3s ease;
   text-align: center;
-  width: 40%;
+  width: 100%;
 }
 
 .buyButton:hover {
