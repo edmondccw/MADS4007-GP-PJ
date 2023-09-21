@@ -10,13 +10,11 @@ const displayOrderSummary = (ticketQtn, ticketPrice) => {
     ticketQtn = parseFloat(ticketQtn)
     ticketPrice = parseFloat(ticketPrice)
     const orderSummary = document.getElementById("orderSummary")
-    console.log("order summary is ", orderSummary, ticketQtn, ticketPrice)
 
     // display all prices to 2 decimal points
     const subtotal = (ticketQtn * ticketPrice).toFixed(2)
     const tax = (subtotal * 0.13).toFixed(2)
     const finalPrice = (Number(subtotal) + Number(tax)).toFixed(2)
-    console.log("final price is ", subtotal, tax, finalPrice)
 
     const infoToBeShown = {
         "Number of tickets": String(ticketQtn),
@@ -30,10 +28,7 @@ const displayOrderSummary = (ticketQtn, ticketPrice) => {
     let orderSummaryHtml = "<table>"
     orderSummaryHtml += "<tr><th>Order Summary</th></tr>"
     for(key in infoToBeShown){
-        console.log("info is ", key)
-        // orderSummary.innerHTML += `<p>${key}: ${infoToBeShown[key]}</p>`
         orderSummaryHtml += `<tr><td>${key}: ${infoToBeShown[key]}</td></tr>`
-
     }
     orderSummaryHtml += "</table>"
     orderSummary.innerHTML = orderSummaryHtml
@@ -46,17 +41,11 @@ const displayErrMsg = (errMsg) => {
 }
 
 const validatePurchaseForm = () => {
-    console.log("pay now clicked")
-
-
     // getting data from the purchase form
      const purchaseForm = document.getElementById("purchaseForm")
-     console.log("form data is ", purchaseForm, purchaseForm.value, purchaseForm.querySelector("input[name=quantity]"))
      const ticketPrice = purchaseForm.querySelector("input[name=ticketType]:checked").value
      const ticketQtn = purchaseForm.querySelector("input[name=quantity]").value
      const creditCardNumber = purchaseForm.querySelector("input[name=creditCardNumber]").value
-     console.log("types are ", typeof ticketQtn, typeof ticketPrice, typeof creditCardNumber)
-     console.log("numbers are ", ticketQtn, ticketPrice, creditCardNumber)
 
     /*
      check the following:
@@ -81,5 +70,4 @@ const validatePurchaseForm = () => {
 
 // adding event listeners when the script is loaded
 const payNowBtn = document.getElementById("payNow")
-console.log('paynowbtn is ', payNowBtn)
 payNowBtn.addEventListener("click", validatePurchaseForm)

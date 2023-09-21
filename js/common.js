@@ -1,5 +1,3 @@
-console.log("initializing")
-
 const tickets = [
     {
         name: "Otaku Demon Slayer Pass",
@@ -61,7 +59,7 @@ const initializeFooter = () => {
 
 const loadTicketPlans = () => {
     const ticketsPricing = document.getElementById("ticketsPricing")
-    console.log("ticketsPricing is ", ticketsPricing)
+
     if(ticketsPricing !== undefined && ticketsPricing !== null){
         let pricingOptionsHtml = ""
 
@@ -108,12 +106,10 @@ const loadTicketTypes = () => {
 const selectTicketType = () => {
     const purchaseForm = document.getElementById("purchaseForm")
 
-    console.log("in common, purchase form is ", purchaseForm)
     if(purchaseForm !== undefined && purchaseForm !== null){
         const price = document.URL.split("?price=")[1]
 
         const radioBtns = purchaseForm.querySelectorAll('input[type="radio"]')  
-        console.log("radiobtns are ", radioBtns, price)
 
         if(Number.isNaN(Number(price))|| price === null){
             // select the cheapest type by default, if no specific ticket is selected
@@ -129,10 +125,7 @@ const selectTicketType = () => {
                 }
             }
             
-            console.log("cheapest price is ", cheapestPrice)
             const cheapestTicketIndex = tickets.indexOf(cheapestPrice)
-            console.log("cheapest ticket is ", cheapestTicketIndex)
-
 
             if(Number.isInteger(Number(cheapestTicketIndex) && cheapestTicketIndex >= 0)){
                 radioBtns[cheapestTicketIndex].checked = "true"
@@ -143,7 +136,6 @@ const selectTicketType = () => {
         }
         else{
             const selectedTicketIndex = tickets.findIndex((ticket) => Number(ticket.price) === Number(price))
-            console.log("selected ", selectedTicketIndex)
             radioBtns[selectedTicketIndex].checked = "true"
         }
     }
