@@ -30,6 +30,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.animeInfo p {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
 .animeName{
     color: whitesmoke;
     font-weight: 900;
