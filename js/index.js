@@ -1,12 +1,7 @@
 console.log("in index.js")
 
-const getTicketType = (event) => {
-    console.log("getting ticket type")
-    console.log("event is ", event)
-    console.log("event 2 ", event.currentTarget)
-}
 
-
+// display a map using leaflet.js
 const map = L.map("map");
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,

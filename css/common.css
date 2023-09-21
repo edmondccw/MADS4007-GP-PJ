@@ -46,7 +46,7 @@ main section {
     text-decoration: underline;
 }
 
-/* Stylinfg for the footer Section*/
+/* Styling for the footer Section*/
 footer {
     background-color: #063970;
 }
@@ -59,7 +59,6 @@ footer {
     font-family: 'Rapier Zero Hollow', sans-serif;
 }
 
-/* Stylinfg for the footer Section*/
 #footerContainer {
     width: 100%;
     padding: 70px 30px 20px;
