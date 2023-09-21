@@ -1,10 +1,11 @@
 #purchaseForm {
     background-color: grey;
-    width: 70%;
-    margin: 10vh auto 3vh auto;
+    width: 45%;
+    margin: 30vh auto 3vh auto;
     border-radius: 1em;
     box-shadow: 0 0 10px orange;
     padding-bottom: 5px;
+    font-family: 'Prompt', sans-serif;
 }
 
 #purchaseForm h2 {
@@ -29,9 +30,11 @@
 
 #errorMessage {
     color: red;
+    margin-bottom: 3.8%;
     text-align: center;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 150%;
+    font-family: 'Prompt', sans-serif;
 }
 
 #payNow {
@@ -58,4 +61,8 @@
     border: 1px solid white;
     padding: 10px;
     width: 30%;
+}
+
+#ticketType label{
+    padding-right: 5px;
 }
