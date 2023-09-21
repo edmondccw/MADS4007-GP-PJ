@@ -1,152 +1,158 @@
 /* font style*/
-#priceSubtitle, #price, #price, .planName, .buyButton, li, #footerBottom p, #dates, #location, #address {
+#priceSubtitle,
+#price,
+#price,
+.planName,
+.buyButton,
+li,
+#footerBottom p,
+#dates,
+#location,
+#address {
   font-family: 'Prompt', sans-serif;
 }
 
-#fesName, #priceTitle, #locationTitle, #footerTitle {
-font-family: 'Rapier Zero Hollow', sans-serif;
+#fesName,
+#priceTitle,
+#locationTitle,
+#footerTitle {
+  font-family: 'Rapier Zero Hollow', sans-serif;
 }
 
 /* Styling for the Festival Section */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
 #infoBg {
-background-image: url(../assets/FesInfoBg.jpg);
-background-color: #333;
-padding: 0;
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-opacity: 0.9;
+  background-image: url(../assets/imgs/FesInfoBg.jpg);
+  background-color: #333;
+  padding: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9;
 }
 
 #festivalInfo {
-padding: 20px;
-border-radius: 10px;
-backdrop-filter: blur(10px);
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 20px;
-height: auto;
-gap: 15%;
-text-align: center;
-padding-top: 5%;
-padding-bottom: 5%;
-}
-
-#festivalDetails {
-width: 30%;
-padding-left: 3%;
-}
-
-#fesName {
-font-size: 10rem;
-color: #fff;
-margin: 0;
-text-align: center;
-padding-bottom: 10px;
-}
-
-#dateLocationContainer {
-width: 60%;
-margin-left: 20%;
-margin-top: 20px;
-margin-bottom: 20px;
-}
-
-#dates,
-#location {
-font-size: 3rem;
-color: #fff;
-text-align: center;
-margin: 0;
-padding-bottom: 10px;
-}
-
-#address {
-font-size: 2rem;
-color: #fff;
-text-align: center;
-margin: 0;
-}
-
-/* Styling for the Featured Anime Image */
-#cardBackground {
-max-width: 80%;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-#featuredAnimeCard {
-  position: relative;
-  width: 50%;
-}  
-
-#cardImage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1; 
-  height: auto;
-  width: auto;
-}
-
-@media (max-width: 2100px) {
-#festivalInfo {
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
   height: auto;
-  flex-direction: column;
+  gap: 15%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #festivalDetails {
-  width: 100%;
-  padding-left: 0%;
-}
-
-#featuredAnimeCard {
-  order: 2;
-  width: 100%;
-  padding: auto;
+  width: 30%;
+  padding-left: 3%;
 }
 
 #fesName {
-  font-size: 4.5rem;
+  font-size: 10rem;
   color: #fff;
   margin: 0;
-  padding-left: 0;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 #dateLocationContainer {
   width: 60%;
-  margin-left: 0%;
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #dates,
 #location {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#address {
   font-size: 2rem;
   color: #fff;
   text-align: center;
   margin: 0;
 }
 
-#address {
-  font-size: 1rem;
-  color: #fff;
-  text-align: center;
-  margin: 0;
+/* Styling for the Featured Anime Image */
+#cardBackground {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+#featuredAnimeCard {
+  position: relative;
+  width: 50%;
+}
+
+#cardImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  height: auto;
+  width: auto;
+}
+
+@media (max-width: 2100px) {
+  #festivalInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #festivalDetails {
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  #featuredAnimeCard {
+    order: 2;
+    width: 100%;
+    padding: auto;
+  }
+
+  #fesName {
+    font-size: 4.5rem;
+    color: #fff;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #dateLocationContainer {
+    width: 60%;
+    margin-left: 0%;
+  }
+
+  #dates,
+  #location {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
+
+  #address {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -160,7 +166,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   #cardImage {
     width: 150px;
     height: 125px;
-}
+  }
 }
 
 @media (max-width: 330px) {
@@ -181,64 +187,64 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 /* Styling for the Tickets and Pricing Section */
 #ticketsPricing {
-text-align: center;
-padding: 20px;
-height: auto;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-content: center;
+  text-align: center;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 #priceTitle {
-font-size: 4rem;
-color: #526D82;
+  font-size: 4rem;
+  color: #526D82;
 }
 
 #priceSubtitle {
-font-size: 2rem;
-color: #DDE6ED;
-padding-bottom: 100px;
+  font-size: 2rem;
+  color: #DDE6ED;
+  padding-bottom: 100px;
 }
 
 .pricingOptions {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
 }
 
 .pricingOption {
-background-color: #f5f5f5;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-margin-bottom: 20px;
-width: 500px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  width: 500px;
 }
 
 @media (max-width: 1800px) {
-.pricingOptions {
-  gap: 5%;
-}
+  .pricingOptions {
+    gap: 5%;
+  }
 
-.pricingOption {
-  width: 100%;
-}
+  .pricingOption {
+    width: 100%;
+  }
 }
 
 .pricingDetails {
-text-align: left;
-display: flex;
-justify-content: center;
-align-content: center;
-flex-direction: column;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .planName {
-font-size: 1.5rem;
-color: #526D82;
-text-align: center;
+  font-size: 1.5rem;
+  color: #526D82;
+  text-align: center;
 }
 
 .planImg {
@@ -248,121 +254,57 @@ text-align: center;
 }
 
 .price {
-font-size: 2rem;
-color: #27374D;
-text-align: center;
-margin: 10px 0;
+  font-size: 2rem;
+  color: #27374D;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .feature {
-padding: 10px;
-padding-bottom: 130px;
-list-style-type: square;
+  padding: 10px;
+  padding-bottom: 130px;
+  list-style-type: square;
 }
 
 .features {
-padding: 10px;
-list-style-type: square;
+  padding: 10px;
+  list-style-type: square;
 }
 
 .features li {
-font-size: 1rem;
-margin: 5px 0;
+  font-size: 1rem;
+  margin: 5px 0;
 }
 
 .buyButton {
-display: inline-block;
-background-color: #27374D;
-color: white;
-padding: 10px 20px;
-border-radius: 5px;
-text-decoration: none;
-font-size: 1rem;
-margin-top: 10px;
-margin-left: 30%;
-transition: background-color 0.3s ease;
-text-align: center;
-width: 40%;
+  display: inline-block;
+  background-color: #27374D;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 30%;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 40%;
 }
 
 .buyButton:hover {
-background-color: #526D82;
+  background-color: #526D82;
 }
 
 /* Styling for the Map Section */
 #locationTitle {
-padding-top: 20px;
-padding-bottom: 20px;
-font-size: 4rem;
-text-align: center;
-color: #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 4rem;
+  text-align: center;
+  color: #f5f5f5;
 }
 
 #festivalMap {
-background-color: #27374D;
-padding-bottom: 80px;
+  background-color: #27374D;
+  padding-bottom: 80px;
 }
-
-/* Stylinfg for the footer Section*/
-#footerContainer {
-width: 100%;
-padding: 70px 30px 20px;
-}
-
-#footerTitle {
-color: white;
-text-align: center;
-font-size: 3.5rem;
-padding-bottom: 20px;
-}
-
-#socialIcons {
-display: flex;
-justify-content: center;
-}
-
-#socialIcons a{
-text-decoration: none;
-padding: 10px;
-background-color: black;
-margin: 10px;
-border-radius: 50%;
-width: 70px;
-height: 70px;
-}
-
-#socialIcons a i {
-font-size: 2em;
-color: #111;
-opacity: 0.9;
-}
-
-.smIcon {
-width: 50px;
-height: 50px;
-}
-
-#socialIcons a:hover {
-background-color: #111;
-transition: 0.5s;
-}
-
-#socialIcons a:hover i {
-transition: 0.5s;
-}
-
-#footerBottom p{
-color: white;
-text-align: center;
-padding-top: 20px;
-padding-bottom: 20px;
-}
-
-#designer {
-opacity: 0.7;
-text-transform: uppercase;
-letter-spacing: 1px;
-font-weight: 400;
-margin: 0px 5px;
-}
-

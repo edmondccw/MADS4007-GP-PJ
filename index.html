@@ -1,146 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AnimeQuest Toronto</title>
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-      crossorigin=""
-    />
-    <script src="js/initialize.js" defer="true"></script>
-  </head>
-  <body>
-    <header id="nav"></header>
 
-    <main>
-      <!--Festival Section -->
-      <section id="infoBg">
-        <div id="festivalInfo">
-          <div id="festivalDetails">
-            <h1 id="fesName">AnimeQuest Toronto</h1>
-          </div>
-          <div id="featuredAnimeCard">
-            <img
-              id="cardBackground"
-              src="./assets/featuredBG.jpg"
-              alt="Featured Anime Background"
-            />
-            <img id="cardImage" src="./assets/featuredAnime.webp" alt="Featured Anime Image"/>
-          </div>
-          <div id="dateLocationContainer">
-            <p id="dates">Sep 25-27, 2023</p>
-            <p id="location">George Brown College Casa Loma</p>
-            <p id="address">175 Kendal Ave, Toronto, ON M5R 3S8</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimeQuest Toronto</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin="" defer="true"></script>
+  <script src="./js/common.js" defer="true"></script>
+  <script src="./js/index.js" defer="true"></script>
+</head>
+
+<body>
+  <header id="nav"></header>
+
+  <main>
+    <!--Festival Section -->
+    <section id="infoBg">
+      <div id="festivalInfo">
+        <div id="festivalDetails">
+          <h1 id="fesName">AnimeQuest Toronto</h1>
         </div>
-      </section>
-
-      <!-- P & T Section -->
-      <section id="ticketsPricing">
-        <h2 id="priceTitle">Tickets and Pricing</h2>
-        <p id="priceSubtitle">Choose the ticket option that suits you best.</p>
-        <div class="pricingOptions">
-          <div class="pricingOption">
-            <div class="pricingDetails">
-              <h3 class="planName">Otaku Demon Slayer Pass</h3>
-              <p class="price">$99</p>
-              <img src="./assets/plan1.png" alt="plan1 icon" class="planImg"/>
-              <ul class="feature">
-                <li>
-                  Harness the power of the Demon Slayer Corps with all-day
-                  access to anime performances
-                </li>
-                <li>
-                  Master your skills and save with 7% off all snacks and drinks
-                </li>
-              </ul>
-              <a href="./purchaseTicket.html" class="buyButton">BUY TICKETS</a>
-            </div>
-          </div>
-          <div class="pricingOption">
-            <div class="pricingDetails">
-              <h3 class="planName">Slayer of Anime Darkness Pass</h3>
-              <p class="price">$299</p>
-              <img src="./assets/plan2.png" alt="plan2 icon" class="planImg"/>
-              <ul class="features">
-                <li>
-                  Embrace the ultimate anime adventure with unlimited access to
-                  all performances
-                </li>
-                <li>
-                  Prove your mastery with valid entry on all festival days
-                </li>
-                <li>Slice through waiting lines with fast entry privileges</li>
-                <li>
-                  Conquer your cravings with 15% off all snacks and drinks
-                </li>
-                <li>
-                  Walk the path of legends with exclusive backstage meet and
-                  greets with your favorite anime stars
-                </li>
-              </ul>
-              <a href="./purchaseTicket.html" class="buyButton">BUY TICKETS</a>
-            </div>
-          </div>
+        <div id="featuredAnimeCard">
+          <img id="cardBackground" src="./assets/imgs/featuredBG.jpg" alt="Featured Anime Background" />
+          <img id="cardImage" src="./assets/imgs/featuredAnime.webp" alt="Featured Anime Image" />
         </div>
-      </section>
-
-      <section id="festivalMap">
-        <div class="mapBlock">
-          <h2 id="locationTitle">Festival Location</h2>
-
-          <!-- Map Section -->
-          <div id="map" style="width: 100%; height: 500px"></div>
-          <script
-            src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-            crossorigin=""
-          ></script>
-          <script>
-            const map = L.map("map");
-            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-              maxZoom: 19,
-              attribution:
-                '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            }).addTo(map);
-            map.setView([43.64306309536304, -79.38716408835465], 12);
-            let gbcMarker = L.marker([
-              43.67620902155788, -79.41028307385125,
-            ]).addTo(map);
-
-            gbcMarker
-              .bindPopup("George Brown College - Casa Loma Campus")
-              .openPopup();
-          </script>
+        <div id="dateLocationContainer">
+          <p id="dates">Sep 25-27, 2023</p>
+          <p id="location">George Brown College Casa Loma</p>
+          <p id="address">175 Kendal Ave, Toronto, ON M5R 3S8</p>
         </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="footerContainer">
-      <h2 id="footerTitle">Connect with us</h2>
-      <div id="socialIcons">
-        <a href="https://www.facebook.com/login/" target ="_blank"><i><img src="./assets/icons/FB.png" alt="fbIcon" class="smIcon"></i></a>
-        <a href="https://www.instagram.com/" target ="_blank"><i><img src="./assets/icons/IG.png" alt="igIcon" class="smIcon"></i></a>
-        <a href="https://www.snapchat.com/" target ="_blank"><i><img src="./assets/icons/SC.png" alt="scIcon" class="smIcon"></i></a>
-        <a href="https://twitter.com/" target ="_blank"><i><img src="./assets/icons/TWT.png" alt="twtIcon" class="smIcon"></i></a>
-        <a href="https://www.youtube.com/" target ="_blank"><i><img src="./assets/icons/YT.png" alt="ytIcon" class="smIcon"></i></a>
       </div>
-      <div id="footerBottom">
-        <p id="copyright">
-          Copyright &copy; 2023; Designed by
-          <span id="designer">AnimeQuest Toronto</span>
-        </p>
+    </section>
+
+    <!-- Tickets & Pricing Section -->
+    <section id="ticketsPricing">
+      <h2 id="priceTitle">Tickets and Pricing</h2>
+      <p id="priceSubtitle">Choose the ticket option that suits you best.</p>
+      <div id="pricingOptions">
+        <div class="pricingOption">
+          <div class="pricingDetails"></div>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section id="festivalMap">
+      <div class="mapBlock">
+        <h2 id="locationTitle">Festival Location</h2>
+        <!-- Map Section -->
+        <div id="map" style="width: 100%; height: 500px"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footerContainer"></footer>
+</body>
+
 </html>
