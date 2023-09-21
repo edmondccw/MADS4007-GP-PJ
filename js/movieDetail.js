@@ -105,7 +105,7 @@ for (anime of animeCard) {
                 <p>Directed by: ${anime.director}\
                 <p>Genre: ${anime.genre}\
                 <br>\
-                <p>Hurry up, Only few left!!</p>\
+                <p style="font-weight:bold; font-size: 1.5em">Hurry up, Only few left!!</p>\
                 <br>\
                 <a href="./purchaseTicket.html" class="buyTicketBtn">Buy Tickets</a>\
             </div>\
